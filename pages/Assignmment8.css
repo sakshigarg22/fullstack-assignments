@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.banner{
+    margin-top: 70px;
+    margin-bottom: 15px;
+    display: flex;
+    background-image: url("../assets/assignment8.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 680px;
+    font-size: 40px;
+    color: white;
+}
+.banner h2{
+    margin: 20px 20px;
+    color: #fff;
+}
+
+.menu {
+    list-style: none;
+    display: inline-flex;
+}
+.menu ul li{
+   
+    line-height: 70px;
+    display: inline-block;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial;
+    display: block;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.menu li a:hover {
+    color: black;
+    background-color: white;
+  }
+  html {
+    scroll-padding-top: 70px;
+    scroll-behavior: smooth;
+    
+  }
+  .container{
+      width: 100%;
+      max-width: 1200px;
+      padding: 15px;
+      margin: 0px auto;
+  }
+  .show-btn,#chk{
+    font-size: 30px;
+    line-height: 70px;
+    color: white;
+    display: none;
+  }
