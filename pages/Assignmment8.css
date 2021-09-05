@@ -1,68 +1,255 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+ html{
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
 }
-.header::after{
-    content: '';
-    display: block;
-    clear: both;
+.head{
+background-color: grey;
+width: 100%;
+height: 80px;
+text-align: center;
+position: fixed;
+top: 0%; 
+
+
+}
+
+.head ul{
+/* margin-top: 10px; */
+display: inline-flex;
+
+
+text-decoration: none;
+list-style: none;
+/* margin-top: 28px; */
+text-align: center;
+/* width: 100%; */
+text-align: center;
+
+}
+.head ul li {
+text-decoration: none;
+/* margin-right: 150px; */
+
+text-align: center;
+padding-left: 70px;
+padding-right:70px;
+padding-top: 15px;
+padding-bottom: 15px;
+border-radius: 4px;
+
+}
+.head ul li:hover{
+background-color: black;
+color: white;
+cursor: pointer;
+}
+.head ul li a{
+text-decoration: none;
+list-style: none;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
 }
 .banner{
-    margin-top: 70px;
-    margin-bottom: 15px;
-    display: flex;
-    background-image: url("../assets/assignment8.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 680px;
-    font-size: 40px;
-    color: white;
-}
-.banner h2{
-    margin: 20px 20px;
-    color: #fff;
-}
+margin-top: 90px;
+background-color: rgba(65, 190, 240, 0.39);
+width: 100%;
+height: 100vh;
+color: white;
+background-image: url("../assets/assignment8.png");
+font-size: 90px; 
+color:white;
 
-.menu {
-    list-style: none;
-    display: inline-flex;
-}
-.menu ul li{
-   
-    line-height: 70px;
-    display: inline-block;
+
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+line-height: 100vh;
 
 }
-.menu ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-family: Arial;
-    display: block;
-    padding: 0 20px;
-    font-size: 20px;
+.setion1{
+text-align: center;
 }
-.menu li a:hover {
-    color: black;
-    background-color: white;
-  }
-  html {
-    scroll-padding-top: 70px;
-    scroll-behavior: smooth;
+
+.box{
+
+width: 200px;
+height: 200px;
+display: inline-flex;
+margin-right: 60px;
+margin-left: 60px;
+border-radius: 50%;
+}
+.box img{
+border-radius: 50%;
+}
+
+
+.section2{
+
+text-align: center;
+}
+.right{
+background-color: grey;
+width:640px;
+height: 63vh;
+float: left;
+
+color: white;
+}
+.right p{
+text-align: justify;
+padding: 15px;
+}
+.left
+{
+
+height: 70vh;
+width: 50%;
+float: right;
+}
+.left::after{
+content: "";
+display: block;
+clear: both;
+
+}
+.up{
+background-color: rgba(238, 13, 13, 0.959);
+width: 100%;
+height: 200px;
+margin-bottom: 10px;
+background-image: url("https://www.alert-software.com/hubfs/corporate_background_wallpaper.png"); 
+background-size: 800px 130px;
+background-repeat: no-repeat;
+image-rendering: pixelated;
+
+height: 130px;
+
+}
+.mid{
+
+background-color: rgba(238, 13, 13, 0.959);
+width: 100%;
+height: 149x;
+margin-bottom: 10px;
+background-image: url("https://cdn.architecturelab.net/wp-content/uploads/2020/03/Best-Home-Office-Desks-4.jpg"); 
+background-size: 800px 140px;
+background-repeat: no-repeat;
+height: 130px;
+image-rendering: pixelated;
+
+}
+.low{
+
+background-color: rgba(238, 13, 13, 0.959);
+width: 100%;
+height: 149px;
+margin-bottom: 10px;
+background-image: url("../assets/lower.png"); 
+background-size: 800px 140px;
+background-repeat: no-repeat;
+height: 130px;
+image-rendering: pixelated;
+
+}
+.section3 h1{
+
+text-align: center;
+margin: auto;
+margin-left: 400px;
+
+
+}
+.section4 h3{
+text-align: center;
+}
+.rec{
+width: 210px;
+height: 250px;
+display: inline-flex;
+margin-left: 55px;
+margin-right: 55px;
+margin-top: 10px;
+border: 2px solid red;
+
+}
+
+.foot{
+background-color: violet;
+width: 100%;
+height: 100px;
+}
+.foot  h3{
+color: white;
+text-align: center;
+line-height: 50px;
+}
+.foot a{
+color: black;
+text-align: center;
+margin-top: 0%;
+height: -50px;
+display: inline-block;
+margin-left: 650px;
+} 
+.container{
+display: inline-flex;
+width: 100%;
+margin-top: 0%;
+
+}
+.boxes{
+     width: 350px; 
+     height: 440px;
+     overflow: hidden;
     
-  }
-  .container{
-      width: 100%;
-      max-width: 1200px;
-      padding: 15px;
-      margin: 0px auto;
-  }
-  .show-btn,#chk{
-    font-size: 30px;
-    line-height: 70px;
+     background-color:lightgrey;
+    border: 2px solid green;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: justify;
+    border-radius: 5px; 
+    
+}
+.boxes img{
+    width: 100%;
+    height: 150px;
+    border-radius: 7px;
+
+}   
+.container p
+{
+    height: 150px;
+    overflow: hidden;
+}
+.btn a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border: 2px solid black;
+    /* text-align: center; */
+    /* padding: 4px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color:rgba(255, 182, 193, 0.501);
+    ;
+    color: red;
+}
+.btn{
+    text-align: center;
+}
+.btn a:hover{
+    background-color: black;
     color: white;
-    display: none;
-  }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+.boxes h2{
+    text-align: center;
+}
