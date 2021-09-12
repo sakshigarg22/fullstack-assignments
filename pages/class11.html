@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Making of Website</title>
+    <title>Document</title>
     <style>
+        .container{
+            background-color: grey;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: relative;
+        }
+        .slider{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            right: -100%;
+            transition: 2s;
+            border: 2px solid red;
+        }
+        .box:hover .slider{
+            right: 0;
+
+        }
         
     </style>
 </head>
-
 <body>
     <div class="container">
-        <div class="header"></div>
-        <div class="content">
-            <div class="left">
-                <div class="nav"></div>
-                <div class="news"></div>
-            </div>
-            <div class="right"></div>
+        <div class="box">
+            <div class="slider"></div>
         </div>
-        <div class="footer"></div>
     </div>
 </body>
-
 </html>
