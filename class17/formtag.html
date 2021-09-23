@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: yellow;
+        }
+        /* #textbox1{
+            border: none;
+            outline: none;
+            background: yellow;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="Welcome.html" method="GET" autocomplete="off">
+        <label for="textbox1">Enter first name:</label>
+        <input type="text" name="fname" id="textbox1" placeholder="Enter first name"  value="">
+        <!-- hidden readonly disabled  -->
+        <br><br>
+        <label for="pass1">Password : </label>
+        <input type="password" name="pass" id="pass1"  title="">
+        <!-- required pattern="[A-Z][a-zA-Z0-9]*[0-9][@#$%/*]" -->
+        <br><br>
+        <input type="checkbox" name="chk" id="" onclick="showPassword()">Show Password</input>
+        <br><br>
+        Gender
+        <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+        <br><br>
+        Hobbies
+        <input type="checkbox" name="Hobbies" value="Dancing" checked>Dancing
+        <input type="checkbox" name="Hobbies" value="Singing">Singing
+        <input type="checkbox" name="Hobbiesr" value="Coding">Coding
+        <input type="checkbox" name="Hobbies" value="Gardening">Gardening
+        <br><br>
+        <select name="city" id="city">
+            <option value="" disabled selected>Select city</option> 
+            <option value="Mathura">Mathura</option>
+            <option value="vrindavan">vrindavan</option>
+            <option value="Aligarh">Aligarh</option>
+            <option value="Kosi">Kosi</option>
+        </select>
+        <br><br>
+        <input list="mylist" name="city1" id="city"  placeholder="Select your city">
+        <datalist id="myliste">
+            <option value="Mathura">Mathura</option>
+            <option value="vrindavan">vrindavan</option>
+            <option value="Aligarh">Aligarh</option>
+            <option value="Kosi">Kosi</option>
+
+
+        </datalist>
+        <br><br>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="file" multiple accept="image/*, .doc, .pdf, .docx">
+        <br><br>
+
+        <input type="submit" value="create">
+        <input type="reset" value="clear data">
+        <input type="image" value="button.png" >
+        <!-- //post is secure while get is unsecure -->
+    </form>
+    <script>
+        function showPassword(){
+            var key = document.getElementById("pass1")
+
+            if(key.type == "password"){
+                key.type = "text";
+            }
+            else{
+                key.type = "password";
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>
