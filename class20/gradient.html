@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS gradient</title>
+    <style>
+        body{
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+           
+        }
+        .container{
+            width: 90%;
+            height: 400px;
+            background-size: purple;
+            display: flex;
+            /* background-image: linear-gradient(to right top ,purple 50%, skyblue 50%); */
+            /* background-image: radial-gradient(purple 50%, skyblue); */
+            /* background-image: linear-gradient(to right top, purple, skyblue, orange, red, blue, yellow);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; */
+            background-image: linear-gradient(to right, #394351, #006f8a, #00a09d, #00cd7e, #b7ee3a);
+            justify-content: center;
+            align-items: center;
+            border-radius: 10%;
+            text-shadow: 10px 10px 20px black ;
+            box-shadow: 10px 10px 20px purple;
+            background-color: tomato;
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 80px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is Gradient</h2>
+    </div>
+</body>
+</html>
